@@ -1,0 +1,467 @@
+/* ?INDEX */
+a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* !------------Tipografia--------------*/
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* !------------HEADER--------------*/
+header {
+    height: 100px;
+    padding: 15px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fae8c9;
+}
+
+header a img {
+    height: 200px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li :hover {
+    background-color: brown;
+    border-radius: 10px;
+    display: inline;
+    margin: 5px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+/* !----------HERO SECTION---------------*/
+.hero {
+    height: 750px;
+    font-weight: bold;
+    text-align: center;
+    background-image: url("../img/perroygatogris.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.hero p {
+    color: black;
+    font-size: 25px;
+}
+
+.hero a {
+    font-size: 40px;
+    background-color: #fae8c99d;
+    color: black;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+
+/* !-------------METODOS DE PAGO Y ACLARACIONES------------*/
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+    margin: 30px;
+}
+
+.info div {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 15px;
+}
+
+.info div h2 {
+    color: brown;
+    font-size: 25px;
+}
+
+.info img {
+    width: 50px;
+}
+
+.info div p {
+    font-size: 18px;
+}
+
+/* !---------PRODUCTOS DESTACADOS---------------*/
+.destacados h2 {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.destacados h3 {
+    color: brown;
+}
+
+.destacados .contenedor-productos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.destacados .contenedor-productos div {
+    border: 2px solid grey;
+    width: 250px;
+    height: 350px;
+    text-align: center;
+    margin: 15px;
+    -webkit-box-shadow: 17px 10px 35px -19px rgba(0,0,0,0.8);
+-moz-box-shadow: 17px 10px 35px -19px rgba(0,0,0,0.8);
+box-shadow: 17px 10px 35px -19px rgba(0,0,0,0.8);
+}
+
+.destacados div img {
+    width: 200px;
+}
+
+.destacados div h3 {
+    font-size: 20px;
+    margin: 15px;
+}
+
+/* !----------------COLOR DE LOS BOTONES--------------*/
+.boton {
+    background-color: #fae8c9;
+    color: black;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* !----------FOOTER---------------*/
+.footer {
+    background-color: #fae8c9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer h2 {
+    color: black;
+    font-size: 35px;
+}
+
+.footer a img {
+    width: 50px;
+}
+
+/*! ----------- MEDIA QUERIES ------------------- */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    header nav ul {
+        width: 100%;
+        justify-content: space-around; 
+    }
+
+    .hero {
+        height: 500px;
+        background-attachment: scroll;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero a {
+        font-size: 25px;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .destacados .contenedor-productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destacados .contenedor-productos div {
+        width: 90%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        flex-direction: row;
+    }
+
+    header nav ul {
+        flex-direction: row;
+    }
+
+    .info {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .hero a {
+        font-size: 30px;
+    }
+
+    .destacados .contenedor-productos {
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .destacados .contenedor-productos {
+        justify-content: space-around;
+    }
+}
+
+
+
+/* ?PRODUCTOS */
+a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+header {
+    height: 100px;
+    padding: 15px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fae8c9;
+}
+
+header a img {
+    height: 80px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 5px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.productos {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.productos h1 {
+    color: brown;
+    font-size: 35px;
+}
+
+.productos p {
+    font-size: 20px;
+}
+
+
+.grid-galeria {
+    width: 90%;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.grid-item {
+    position: relative;
+    height: 250px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    box-shadow: 17px 10px 35px -19px rgba(0, 0, 0, 0.8);
+}
+
+.grid-item h3 {
+    position: absolute;
+    bottom: 0;
+    background-color: #fae8c9ad;
+    color: black;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+
+.footer {
+    background-color: #fae8c9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer h2 {
+    color: black;
+    font-size: 35px;
+}
+
+.footer div {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer a img {
+    width: 50px;
+}
+
+/*! Media Queries */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        width: auto;
+        justify-content: space-around;
+    }
+
+    header a img {
+        height: 60px;
+    }
+
+    .grid-galeria {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .grid-item {
+        height: 200px;
+    }
+
+    .productos h1 {
+        font-size: 28px;
+    }
+
+    .productos p {
+        font-size: 18px;
+    }
+
+    .footer h2 {
+        font-size: 30px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .grid-galeria {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-item {
+        height: 250px;
+    }
+
+    .productos h1 {
+        font-size: 32px;
+    }
+
+    .productos p {
+        font-size: 20px;
+    }
+
+    .footer h2 {
+        font-size: 32px;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .grid-galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-item {
+        height: 300px;
+    }
+}
