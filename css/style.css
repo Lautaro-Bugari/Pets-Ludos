@@ -12,6 +12,7 @@ body {
     padding: 0;
 }
 
+
 /* !------------HEADER--------------*/
 
 header nav ul li :hover {
@@ -185,6 +186,7 @@ box-shadow: 17px 10px 35px -19px rgba(0,0,0,0.8);
     justify-content: space-between; 
     max-width: 100%; 
     margin: 0 auto; 
+    bottom: 0; /* Se asegura que esté anclado al fondo */
 }
 
 
@@ -300,16 +302,20 @@ box-shadow: 17px 10px 35px -19px rgba(0,0,0,0.8);
     }
 }
 
-/* ?NOSOTROS */
+                            /* ?NOSOTROS */
 
-.nosotros {
-    padding: 20px;
+.nosotros h1 {
+    color: #fae8c9c7;
+    background-color: rgb(0, 0, 0);
+    font-size: 50px;
+    margin-top: 20px;
 }
+
 
 .nosotros h2,h3,h4 {
     color: brown;
     font-size: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 25px; 
 }
 
 .nosotros div img {
@@ -324,8 +330,8 @@ box-shadow: 17px 10px 35px -19px rgba(0,0,0,0.8);
     font-size: 50px;
     color: #fae8c9c7;
     background-color: rgb(0, 0, 0);
-    border-radius: 10px;
     margin-bottom: 50px;
+    margin-top: 20px;
 }
 .contenedor {
     display: flex;
@@ -355,7 +361,7 @@ box-shadow: 17px 10px 35px -19px rgba(0,0,0,0.8);
     margin-left: 160px;
 }
 
-/* ?PRODUCTOS */
+                               /* ?PRODUCTOS */
 a {
     margin: 0;
     padding: 0;
@@ -368,22 +374,17 @@ body, html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
-
 .productos {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .productos h1 {
-    color: brown;
-    font-size: 35px;
+    color: #fae8c9c7;
+    background-color: rgb(0, 0, 0);
+    font-size: 50px;
+    margin-top: 20px;
 }
-
-.productos p {
-    font-size: 20px;
-}
-
 
 .grid-galeria {
     width: 90%;
@@ -489,4 +490,107 @@ body, html {
     .grid-item {
         height: 300px;
     }
+}
+
+/* ?CONTACTO */
+
+.titulo {
+    text-align: center;
+    font-size: 50px;
+    color: #fae8c9c7;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.contenedor-contacto {
+    display: flex;
+    justify-content: flex-start; 
+}
+
+
+.contacto {
+    width: 400px; 
+    margin-right: 20px; 
+    margin-left: 400px;
+}
+
+.redes-sociales {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    margin-top: 100px;
+}
+
+.medios-alternativos {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    margin-top: 30px;
+}
+
+
+
+.redes-sociales h2,
+.medios-alternativos h2 {
+    margin-bottom: 10px;
+    color: brown;
+    font-size: 40px;
+}
+
+.redes-sociales div,
+.medios-alternativos div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.redes-sociales img,
+.medios-alternativos img {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 20px; 
+}
+
+.cuestionario {
+    width: 500px; 
+    margin-top: 0; 
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.cuestionario h3 {
+    margin-bottom: 30px;
+}
+
+.cuestionario div {
+    margin-bottom: 30px; 
+}
+
+.cuestionario input[type="text"],
+.cuestionario input[type="email"],
+.cuestionario input[type="number"],
+.cuestionario textarea {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+}
+
+.cuestionario input[type="submit"],
+.cuestionario input[type="reset"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    background-color: rgb(0, 0, 0); 
+    color: white; 
+    margin-right: 10px; 
+}
+
+.cuestionario input[type="submit"]:hover,
+.cuestionario input[type="reset"]:hover {
+    background-color: brown; 
 }
