@@ -1,0 +1,145 @@
+.hero {
+    height: 750px;
+    font-weight: bold;
+    text-align: center;
+    background-image: url("../img/perroygatogris.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        color: white;
+        font-size: 50px;
+    }
+    
+    p{
+        color: black;
+        font-size: 25px;
+    }
+    
+    a{
+        font-size: 40px;
+        background-color: #fae8c99d;
+        color: black;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 7px;
+    }
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+    margin: 30px;
+    div {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 15px;    width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 15px;
+        h2{
+            color: brown;
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        img {
+            width: 50px;
+        }
+    }
+
+    div {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 15px;
+        h2 {
+            color: brown;
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        img {
+            width: 50px;
+        }
+    }
+
+    div {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 15px;
+        h2 {
+            color: brown;
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        img {
+            width: 50px; 
+        }
+    }
+}
+
+.destacados {
+    h2 {
+        color: white;
+        background-color: black;
+        padding: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .contenedor-productos {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        div {
+            border: 2px solid grey;
+            width: 250px;
+            height: 350px;
+            text-align: center;
+            margin: 15px;
+            -webkit-box-shadow: 17px 10px 35px -19px rgba(0,0,0,0.8);
+        -moz-box-shadow: 17px 10px 35px -19px rgba(0,0,0,0.8);
+        box-shadow: 17px 10px 35px -19px rgba(0,0,0,0.8);
+            img {
+                width: 200px;
+            }
+
+            h3{
+                color: brown;
+                font-size: 20px;
+                margin: 15px;
+            }
+
+            .boton {
+                background-color: #fae8c9;
+                color: black;
+                padding: 10px;
+                margin-top: 20px;
+                border-radius: 10px;
+            }
+
+            }
+        }
+
+    } 
