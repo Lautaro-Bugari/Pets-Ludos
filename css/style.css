@@ -170,7 +170,7 @@ box-shadow: 17px 10px 35px -19px rgba(0,0,0,0.8);
     margin-top: 20px;
     border-radius: 10px;
 }
- 
+
 
 
 
@@ -477,7 +477,7 @@ box-shadow: 17px 10px 35px -19px rgba(0,0,0,0.8);
 
 .nosotros h1 {
     color: #fae8c9c7;
-    background-color: rgb(0, 0, 0);
+    background-color: black;
     font-size: 50px;
     margin-top: 20px;
 }
@@ -772,9 +772,7 @@ a {
     flex: 1;
 }
 
-.texto-1{
-    flex: 1;
-}
+
 
 /*! Media Queries */
 

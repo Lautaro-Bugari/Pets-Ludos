@@ -1,3 +1,44 @@
+/* !------------ VARIABLES--------------*/
 $color-principal: #fae8c9;
 $color-secundario: brown;
 $color-secundario: black;
+
+
+/* !------------OPERACIONES--------------*/
+$ancho: 650px;
+$alto: 450px;
+
+
+
+/* !------------EXTENDS--------------*/
+
+%titulo {
+    color: #fae8c9c7;
+    background-color: black;
+    font-size: 50px;
+    margin-top: 20px;
+  }
+
+  %contacto-rd-md {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+  }
+  /* !------------AL USAR CHEQUEAR MARGIN TOP--------------*/
+
+  %contacto-rd-md-titulos {
+    margin-bottom: 10px;
+    color: brown;
+    font-size: 40px;
+  }
+
+
+
+  %cuestionario-1 {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+  }
+
