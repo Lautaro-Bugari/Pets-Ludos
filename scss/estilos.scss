@@ -7,158 +7,195 @@
 
 
 /*! ----------- CONTACTO ------------------- */
-h1 {
+.titulo {
     @extend %titulo
 }
 
 .contacto {
-    width: 400px; 
-    margin-right: 20px; 
-    margin-left: 400px;
-    .contenedor-contacto {
+    display: flex;
+    gap: 2em;
+    padding: 2em;
+    width: 100%; 
+    .otros-medios {
         display: flex;
-        justify-content: flex-start; 
-        .redes-sociales {
-        @extend %contacto-rd-md;
-        margin-top: 100px;
-            h2 { 
-        @extend %contacto-rd-md-titulos
-            }
-        
-            div {
-                display: flex;
-                align-items: center;
-                margin-bottom: 10px;
-                img {
-                    width: 30px; 
-                    height: 30px; 
-                    margin-right: 20px; 
-                }
-        
-
-            }
-        
-            div {
-                display: flex;
-                align-items: center;
-                margin-bottom: 10px;
-
-        
-
-            }
-        }
-        
-        .medios-alternativos {
-            @extend %contacto-rd-md;
-            margin-top: 30px;
-            h2 {
-                @extend %contacto-rd-md-titulos
-            }
-        
-            div {
-                display: flex;
-                align-items: center;
-                margin-bottom: 10px;
-                img {
-                    width: 30px; 
-                    height: 30px; 
-                    margin-right: 20px; 
-                }
-        
-
-            }
-        
-            div {
-                display: flex;
-                align-items: center;
-                margin-bottom: 10px;
-                img {
-                    width: 30px; 
-                    height: 30px; 
-                    margin-right: 20px; 
-                }
-        
-
-            }
-        
-            div {
-                display: flex;
-                align-items: center;
-                margin-bottom: 10px;
-                img {
-                    width: 30px; 
-                    height: 30px; 
-                    margin-right: 20px; 
-                }
-        
-            }
-        }
-    }
-    
-}
-
-.cuestionario {
-    width: 500px; 
-    margin-top: 0; 
-    margin-left: 250px;
-    margin-top: 50px;
-    h3{
-        margin-bottom: 30px;
-    }
-
-    div {
-        margin-bottom: 30px; 
-
-    
-        input[type="text"] {
-        @extend %cuestionario-1
-        }
-    }
-
-    div {
-    
-        input[type="email"] {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px; 
+        background-color: #f2f2f2; 
+        padding: 30px;
+        border-radius: 8px;
+        width: 50%; 
+        h2 {
+            @extend %contacto-rd-md-titulos;
+            text-align: center;
+            padding: 15px;
             width: 100%; 
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px; 
         }
-    }
 
-    div {
-
-    
-        input[type="number"] {
-            @extend %cuestionario-1
-        }
-    }
-
-
-    div {
-        input[type="submit"] {
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px; 
-            background-color: rgb(0, 0, 0); 
-            color: white; 
-            margin-right: 10px; 
-        }
-        input[type="reset"] {
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px; 
-            background-color: rgb(0, 0, 0); 
-            color: white; 
-            margin-right: 10px; 
-            &:hover{
-                background-color: brown; 
+        div {
+            display: flex;
+            align-items: center;
+            gap: 10px; 
+            margin-bottom: 25px;
+            img {
+                width: 40px; 
+                height: auto;
+                display: block; 
             }
+            p {
+                margin: 0; 
+                font-size: 20px; 
+                color: $color-terciario;
+            }
+        }
+
+        div {
+            
+            img {
+                width: 40px; 
+                height: auto;
+                display: block; 
+            }
+            p {
+                margin: 0; 
+                font-size: 20px; 
+                color: $color-terciario;
+            }
+        }
+
+        div {
+            
+            img {
+                width: 40px; 
+                height: auto;
+                display: block; 
+            }
+            p {
+                margin: 0; 
+                font-size: 20px; 
+                color: $color-terciario;
+            }
+        }
     }
 
+    .cuestionario {
+        background-color: #f2f2f2; 
+        padding: 20px;
+        border-radius: 8px;
+        width: 50%; 
+        h2 {
+            @extend %contacto-rd-md-titulos;
+            text-align: center;
+            padding: 15px;
+        }
 
-}
-}
+        form {
+            
+            div {
+                margin-bottom: 15px;
+                label {
+                    display: block;
+                    margin-bottom: 10px;
+                    font-weight: bold;
+                    color:$color-terciario;
+                }
+    
+                input[type="text"] {
+                    width: 100%;
+                    padding: 12px; 
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    font-size: 16px; 
+                }
+            }
+    
+            div {
+    
+                label {
+                    display: block;
+                    margin-bottom: 10px;
+                    font-weight: bold;
+                    color: $color-terciario;
+                }
+    
+                input[type="email"] {
+                    width: 100%;
+                    padding: 12px; 
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    font-size: 16px;  
+                }
+            }
+    
+            div {
+    
+                label {
+                    display: block;
+                    margin-bottom: 10px;
+                    font-weight: bold;
+                    color:$color-terciario;
+                }
+    
+                input[type="number"] {
+                    width: 100%;
+                    padding: 12px; 
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    font-size: 16px;  
+                }
+            }
+    
+            div {
+    
+                label {
+                    display: block;
+                    margin-bottom: 10px;
+                    font-weight: bold;
+                    color: $color-terciario;
+                }
+            }
 
+            input[type="submit"] {
+                padding: 10px 15px;
+                border: none;
+                border-radius: 4px;
+                background-color: $color-principal;
+                color: $color-terciario;
+                font-weight: bold;
+                cursor: pointer;
+                margin-right: 10px;
+                transition: background-color 0.3s ease, transform 0.2s ease; 
+                &:hover {
+                    background-color:$color-secundario;
+                    transform: scale(1.05); 
+                }
+            }
+
+            input[type="reset"] {
+                padding: 10px 15px;
+                border: none;
+                border-radius: 4px;
+                background-color:$color-principal;
+                color: $color-terciario;
+                font-weight: bold;
+                cursor: pointer;
+                margin-right: 10px;
+                transition: background-color 0.3s ease, transform 0.2s ease; 
+                &:hover {
+                    background-color: $color-secundario;
+                    transform: scale(1.05); 
+                }
+            }
+        }
+
+        
+
+
+    }
+}
 
 /*! ----------- NOSOTROS ------------------- */
 
@@ -177,7 +214,7 @@ h1 {
             flex: 1;
             margin-left: 160px;
             h2 {
-                color: brown;
+                color: $color-secundario;
                 font-size: 40px;
                 margin-bottom: 25px; 
             }
@@ -216,7 +253,7 @@ h1 {
             flex: 1;
             margin-left: 160px;
             h3 {
-                color: brown;
+                color: $color-secundario;
                 font-size: 40px;
                 margin-bottom: 25px; 
             }
@@ -237,7 +274,7 @@ h1 {
             flex: 1;
             margin-left: 160px;
             h4 {
-                color: brown;
+                color: $color-secundario;
                 font-size: 40px;
                 margin-bottom: 25px; 
             }
@@ -281,7 +318,7 @@ a {
         gap: 15px;
         .grid-item {
             position: relative;
-            height: 250px;
+            height: 200px;
             img {
                 width: 100%;
                 height: 100%;
@@ -292,8 +329,8 @@ a {
             h3 {
                 position: absolute;
                 bottom: 0;
-                background-color: #fae8c9ad;
-                color: black;
+                background-color:$color-principal;
+                color: color-terciario;
                 width: 100%;
                 padding: 5px;
                 text-align: center;
@@ -315,7 +352,7 @@ a {
         .texto-1 {
             flex: 1;
             h2 {
-                color: brown;
+                color: $color-secundario;
                 margin-bottom: 30px;
             }
 

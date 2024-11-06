@@ -1,3 +1,19 @@
+@charset "UTF-8";
+/* !------------ VARIABLES--------------*/
+/* !------------OPERACIONES--------------*/
+/* !------------EXTENDS--------------*/
+.titulo, .nostros h1, .prodcutos h1, .servicios h1 {
+  color: #fae8c9c7;
+  background-color: black;
+  font-size: 50px;
+  margin-top: 20px; }
+
+/* !------------AL USAR CHEQUEAR MARGIN TOP--------------*/
+.contacto .otros-medios h2, .contacto .cuestionario h2 {
+  margin-bottom: 10px;
+  color: brown;
+  font-size: 40px; }
+
 a {
   margin: 0;
   padding: 0;
@@ -391,3 +407,243 @@ header {
   .mapa iframe {
     width: 100%;
     height: 300px; } }
+
+/*! ----------- CONTACTO ------------------- */
+.contacto {
+  display: flex;
+  gap: 2em;
+  padding: 2em;
+  width: 100%; }
+  .contacto .otros-medios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 8px;
+    width: 50%; }
+    .contacto .otros-medios h2 {
+      text-align: center;
+      padding: 15px;
+      width: 100%; }
+    .contacto .otros-medios div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 25px; }
+      .contacto .otros-medios div img {
+        width: 40px;
+        height: auto;
+        display: block; }
+      .contacto .otros-medios div p {
+        margin: 0;
+        font-size: 20px;
+        color: black; }
+    .contacto .otros-medios div img {
+      width: 40px;
+      height: auto;
+      display: block; }
+    .contacto .otros-medios div p {
+      margin: 0;
+      font-size: 20px;
+      color: black; }
+    .contacto .otros-medios div img {
+      width: 40px;
+      height: auto;
+      display: block; }
+    .contacto .otros-medios div p {
+      margin: 0;
+      font-size: 20px;
+      color: black; }
+  .contacto .cuestionario {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%; }
+    .contacto .cuestionario h2 {
+      text-align: center;
+      padding: 15px; }
+    .contacto .cuestionario form div {
+      margin-bottom: 15px; }
+      .contacto .cuestionario form div label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: black; }
+      .contacto .cuestionario form div input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px; }
+    .contacto .cuestionario form div label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: black; }
+    .contacto .cuestionario form div input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px; }
+    .contacto .cuestionario form div label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: black; }
+    .contacto .cuestionario form div input[type="number"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px; }
+    .contacto .cuestionario form div label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: black; }
+    .contacto .cuestionario form input[type="submit"] {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      background-color: #fae8c9;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: background-color 0.3s ease, transform 0.2s ease; }
+      .contacto .cuestionario form input[type="submit"]:hover {
+        background-color: brown;
+        transform: scale(1.05); }
+    .contacto .cuestionario form input[type="reset"] {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      background-color: #fae8c9;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      margin-right: 10px;
+      transition: background-color 0.3s ease, transform 0.2s ease; }
+      .contacto .cuestionario form input[type="reset"]:hover {
+        background-color: brown;
+        transform: scale(1.05); }
+
+/*! ----------- NOSOTROS ------------------- */
+.nostros .contenedor {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 120px; }
+  .nostros .contenedor .texto-1 {
+    flex: 1;
+    margin-left: 160px; }
+    .nostros .contenedor .texto-1 h2 {
+      color: brown;
+      font-size: 40px;
+      margin-bottom: 25px; }
+    .nostros .contenedor .texto-1 p {
+      max-width: 700px;
+      font-size: 20px; }
+
+.nostros .img-1 {
+  margin-right: 100px; }
+  .nostros .img-1 img {
+    width: 650px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px; }
+
+.nostros .contenedor {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 120px; }
+  .nostros .contenedor .img-2 {
+    margin-left: 100px;
+    width: 650px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px; }
+  .nostros .contenedor .texto-2 {
+    flex: 1;
+    margin-left: 160px; }
+    .nostros .contenedor .texto-2 h3 {
+      color: brown;
+      font-size: 40px;
+      margin-bottom: 25px; }
+    .nostros .contenedor .texto-2 p {
+      max-width: 700px;
+      font-size: 20px; }
+
+.nostros .contenedor {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 120px; }
+  .nostros .contenedor .texto-3 {
+    flex: 1;
+    margin-left: 160px; }
+    .nostros .contenedor .texto-3 h4 {
+      color: brown;
+      font-size: 40px;
+      margin-bottom: 25px; }
+    .nostros .contenedor .texto-3 p {
+      max-width: 700px;
+      font-size: 20px; }
+
+.nostros .img-3 {
+  margin-right: 100px;
+  width: 650px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px; }
+
+/*! ----------- PRODUCTOS------------------- */
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.prodcutos {
+  text-align: center;
+  margin-top: 20px; }
+  .prodcutos .grid-galeria {
+    width: 90%;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px; }
+    .prodcutos .grid-galeria .grid-item {
+      position: relative;
+      height: 200px; }
+      .prodcutos .grid-galeria .grid-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        box-shadow: 17px 10px 35px -19px rgba(0, 0, 0, 0.8); }
+      .prodcutos .grid-galeria .grid-item h3 {
+        position: absolute;
+        bottom: 0;
+        background-color: #fae8c9;
+        color: color-terciario;
+        width: 100%;
+        padding: 5px;
+        text-align: center; }
+
+/*! ----------- SERVICIOS------------------- */
+.servicios .contenedor .texto-1 {
+  flex:  1; }
+  .servicios .contenedor .texto-1 h2 {
+    color: brown;
+    margin-bottom: 30px; }
+
+.servicios .mapa iframe {
+  margin-left: 160px;
+  margin-right: 100px;
+  margin-top: 40px; }

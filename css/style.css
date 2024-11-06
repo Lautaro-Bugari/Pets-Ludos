@@ -311,165 +311,114 @@ box-shadow: 17px 10px 35px -19px rgba(0,0,0,0.8);
     margin-top: 20px;
 }
 
-.contenedor-contacto {
-    display: flex;
-    justify-content: flex-start; 
-}
-
-
 .contacto {
-    width: 400px; 
-    margin-right: 20px; 
-    margin-left: 400px;
+    display: flex;
+    gap: 2em;
+    padding: 2em;
+    width: 100%; 
+
 }
 
-.redes-sociales {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
-    margin-top: 100px;
+.otros-medios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; 
+    background-color: #f2f2f2; 
+    padding: 30px;
+    border-radius: 8px;
+    width: 50%; 
+
 }
 
-.medios-alternativos {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
-    margin-top: 30px;
-}
-
-
-
-.redes-sociales h2,
-.medios-alternativos h2 {
-    margin-bottom: 10px;
-    color: brown;
+.otros-medios h2 {
+    text-align: center;
     font-size: 40px;
-}
+    color: brown;
+    margin-bottom: 15px;
+    padding: 15px;
+    width: 100%; 
+    }
 
-.redes-sociales div,
-.medios-alternativos div {
+
+.otros-medios div {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    gap: 10px; 
+    margin-bottom: 25px;
 }
 
-.redes-sociales img,
-.medios-alternativos img {
-    width: 30px; 
-    height: 30px; 
-    margin-right: 20px; 
+.otros-medios img {
+    width: 40px; 
+    height: auto;
+    display: block; 
+}
+
+.otros-medios p {
+    margin: 0; 
+    font-size: 20px; 
+    color: black;
 }
 
 .cuestionario {
-    width: 500px; 
-    margin-top: 0; 
-    margin-left: 250px;
-    margin-top: 50px;
+    background-color: #f2f2f2; 
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%; 
 }
 
-.cuestionario h3 {
-    margin-bottom: 30px;
+.cuestionario h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: brown;
+    font-size: 40px;
+    padding: 15px;
 }
 
 .cuestionario div {
-    margin-bottom: 30px; 
+    margin-bottom: 15px;
+}
+
+.cuestionario label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black;
 }
 
 .cuestionario input[type="text"],
 .cuestionario input[type="email"],
 .cuestionario input[type="number"],
 .cuestionario textarea {
-    width: 100%; 
-    padding: 10px;
+    width: 100%;
+    padding: 12px; 
     border: 1px solid #ccc;
-    border-radius: 5px; 
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px; 
 }
 
 .cuestionario input[type="submit"],
 .cuestionario input[type="reset"] {
     padding: 10px 15px;
     border: none;
-    border-radius: 5px; 
-    background-color: rgb(0, 0, 0); 
-    color: white; 
-    margin-right: 10px; 
+    border-radius: 4px;
+    background-color: #fae8c9;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
 }
 
 .cuestionario input[type="submit"]:hover,
 .cuestionario input[type="reset"]:hover {
-    background-color: brown; 
+    background-color: brown;
+    transform: scale(1.05); 
 }
 
 /*! ----------- MEDIA QUERIES ------------------- */
-@media (min-width: 1200px) {
-    .titulo {
-        font-size: 60px; 
-    }
 
-    .contacto, .cuestionario {
-        margin-left: 200px; 
-    }
-
-    .cuestionario {
-        width: 600px; 
-    }
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .contenedor-contacto {
-        flex-direction: column; 
-        align-items: center;
-    }
-
-    .contacto, .cuestionario {
-        width: 80%; 
-        margin: 0 auto; 
-    }
-
-    .titulo {
-        font-size: 40px; 
-    }
-
-    .cuestionario input[type="submit"],
-    .cuestionario input[type="reset"] {
-        width: 100%; 
-        margin-top: 10px; 
-    }
-}
-
-
-@media (max-width: 767px) {
-    .contenedor-contacto {
-        flex-direction: column; 
-        padding: 0 20px; 
-    }
-
-    .contacto, .cuestionario {
-        width: 100%; 
-        margin: 0 auto; 
-    }
-
-    .titulo {
-        font-size: 30px; 
-    }
-
-    .redes-sociales h2, .medios-alternativos h2 {
-        font-size: 30px; 
-    }
-
-    .cuestionario input[type="submit"],
-    .cuestionario input[type="reset"] {
-        width: 100%; 
-        margin-top: 10px;
-    }
-
-    .cuestionario div {
-        margin-bottom: 15px; 
-    }
-}
 
 
 
