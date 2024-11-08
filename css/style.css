@@ -50,6 +50,7 @@ header nav ul {
 header nav ul li {
     display: inline;
     margin: 5px;
+    border-radius: 10px;
 }
 
 header a {
@@ -75,8 +76,10 @@ header a {
 }
 
 .hero h1 {
-    color: white;
-    font-size: 50px;
+    color: black;
+    font-size: 80px;
+    margin-bottom: 300px;
+
 }
 
 .hero p {
@@ -88,9 +91,10 @@ header a {
     font-size: 40px;
     background-color: #fae8c99d;
     color: black;
-    padding: 10px;
+    padding: 20px;
     margin-top: 20px;
     border-radius: 7px;
+    text-decoration: none;
 }
 
 /* !-------------METODOS DE PAGO Y ACLARACIONES------------*/
@@ -147,11 +151,17 @@ header a {
     width: 250px;
     height: 350px;
     text-align: center;
-    margin: 15px;
+    margin: 40px;
     -webkit-box-shadow: 17px 10px 35px -19px rgba(0,0,0,0.8);
 -moz-box-shadow: 17px 10px 35px -19px rgba(0,0,0,0.8);
 box-shadow: 17px 10px 35px -19px rgba(0,0,0,0.8);
+transition: 1s;
 }
+
+.contenedor-productos div:hover {
+    scale: 1.1;
+}
+
 
 .destacados div img {
     width: 200px;
@@ -169,9 +179,21 @@ box-shadow: 17px 10px 35px -19px rgba(0,0,0,0.8);
     padding: 10px;
     margin-top: 20px;
     border-radius: 10px;
+    text-decoration: none;
 }
 
+.boton-principal {
+    background-color: #fae8c9;
+    color: black;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 1s;
+}
 
+.boton-principal:hover {
+    scale: 1.2;
+}
 
 
 /* !----------FOOTER---------------*/
@@ -206,11 +228,11 @@ box-shadow: 17px 10px 35px -19px rgba(0,0,0,0.8);
 .redes a img {
     height: 40px; 
     width: 40px;
-    transition: transform 0.3s ease; 
+    transition: 1s; 
 }
 
 .redes a img:hover {
-    transform: scale(1.2); 
+    transform: scale(1.5); 
 }
 
 
@@ -588,12 +610,18 @@ a {
     margin: 80px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 20px;
 }
 
 .grid-item {
     position: relative;
     height: 250px;
+    transition: 1s;
+    margin: 15px;
+}
+
+.grid-item:hover {
+    scale: 1.1;
 }
 
 .grid-item img {
@@ -778,6 +806,7 @@ a {
     .servicios div h2 {
         font-size: 25px; 
         text-align: center; 
+        margin-left: 10px;
     }
 
     .servicios div p {

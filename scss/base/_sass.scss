@@ -17,7 +17,7 @@ $alto: 450px;
     background-color: black;
     font-size: 50px;
     margin-top: 20px;
-  }
+    }
 
 ---------AL USAR CHEQUEAR MARGIN TOP--------------*/
 
@@ -28,4 +28,14 @@ $alto: 450px;
   }
 
 
+%botones {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #fae8c9;
+  color: black;
+}
 
+@mixin flex ($flex,$justify,$aling) {
+display:$flex ;
+align-items:$aling ;
+}

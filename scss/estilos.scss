@@ -17,14 +17,14 @@
     padding: 2em;
     width: 100%; 
     .otros-medios {
-        display: flex;
         flex-direction: column;
-        align-items: flex-start;
         gap: 10px; 
         background-color: #f2f2f2; 
         padding: 30px;
         border-radius: 8px;
         width: 50%; 
+        @include flex (flex,flex-start);
+        
         h2 {
             @extend %contacto-rd-md-titulos;
             text-align: center;
@@ -33,8 +33,7 @@
         }
 
         div {
-            display: flex;
-            align-items: center;
+            @include flex (flex,center);
             gap: 10px; 
             margin-bottom: 25px;
             img {
@@ -206,10 +205,9 @@
     }
 
     .contenedor {
-        display: flex;
-        align-items: center; 
         gap: 30px; 
         margin-bottom: 120px; 
+        @include flex (flex,center);
         .texto-1 {
             flex: 1;
             margin-left: 160px;
@@ -237,8 +235,7 @@
     }
 
     .contenedor {
-        display: flex;
-        align-items: center; 
+        @include flex (flex,center);
         gap: 30px; 
         margin-bottom: 120px; 
         .img-2 {
@@ -266,8 +263,7 @@
     }
 
     .contenedor {
-        display: flex;
-        align-items: center; 
+        @include flex (flex,center);
         gap: 30px; 
         margin-bottom: 120px; 
         .texto-3 {
@@ -319,6 +315,8 @@ a {
         .grid-item {
             position: relative;
             height: 200px;
+
+            
             img {
                 width: 100%;
                 height: 100%;
